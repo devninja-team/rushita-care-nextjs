@@ -1,0 +1,5 @@
+# Dependency install scripts are not run. pnpm 11+ fails the install (ERR_PNPM_IGNORED_BUILDS)
+# unless every dependency that ships a build script is explicitly allowed or ignored here.
+allowBuilds:
+  '@firebase/util': false
+  protobufjs: false
